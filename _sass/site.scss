@@ -1,10 +1,10 @@
 @charset "utf-8";
 // Define defaults for each variable.
-$highlight: #003a2c !default;
-$text: #888 !default;
-$header: #be7500 !default;
-$icons: #7b3c1d;
-$light-bg: #ffffeb !default;
+$highlight: #005555 !default;
+$text: #003636 !default;
+$header: #005500 !default;
+$icons: #005500;
+$light-bg: #C9E4CA !default;
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $fancy-font: "Roboto Condensed", sans-serif !default;
 
@@ -221,6 +221,13 @@ hr {
     }
     h1, h2, h3, h4, h5, h6 {
         color: $header;
+        scroll-margin-top: 60px;
+        @include media-breakpoint-down(md) {
+            scroll-margin-top: 80px;
+        }
+        @include media-breakpoint-down(md) {
+            scroll-margin-top: 90px;
+        }
     }
     h2 {
         padding-top: 30px;
@@ -340,6 +347,26 @@ hr {
         position: relative;
         padding: 0 0 0 2em;
         min-height: 2em;
+    }
+}
+
+.gallery {
+    a {
+        overflow: hidden;
+        border-radius: 5px;
+        display: block;
+        &:hover {
+            cursor: pointer;
+            outline: 2px solid $icons;
+        }
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+    .col-3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 

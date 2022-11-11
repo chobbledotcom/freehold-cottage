@@ -4,7 +4,7 @@ layout: default
 
 {% include title.html %}
 <div class="row">
-    <div class="col-md-8 order-sm-1 margin--bottom">
+    <div class="col-md-8 margin--bottom">
         <div class="page {{page.cssClass}}">
             {{ content | switcheroo }}
             {% assign news_items = site.news | sort: "date" | reverse %}
@@ -22,7 +22,7 @@ layout: default
             {% endfor %}
         </div>
     </div>
-    <div class="col-md-4 order-sm-2 margin--bottom">
+    <div class="col-md-4 margin--bottom">
         {% include contact-links.html %}
         {% include cqc-widget.html %}
     </div>

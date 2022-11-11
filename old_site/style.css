@@ -1,0 +1,11 @@
+	body { color: white; background: #2d5325; font-family: Arial; font-size: small }
+	h1 { font-size: x-large; font-weight: normal }
+	h2 { font-size: xx-small; font-weight: normal; text-align: center } 
+	A:link {text-decoration: none; color: white }
+	A:visited {text-decoration: none; color: white }
+	A:active {text-decoration: none; color: white }
+	A:hover {text-decoration: underline; color: white }
+#links { position: absolute; top: 10%; left: 72%; background-color:#2d5325; border-width: 0; width: 8%; padding: 0%; text-align: right }
+#mainbody { position: absolute; top: 5px; left: 20%; background-color:#2d5325; border-width: 0; width: 50%; padding: 0%; text-align: justify 
+
+}

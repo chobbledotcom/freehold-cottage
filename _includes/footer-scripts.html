@@ -3,14 +3,3 @@
     <script async href="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=179012276202158&autoLogAppEvents=1" id="facebook-jssdk"></script>
 {% endif %}
 
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>

@@ -9,9 +9,9 @@ subtitle: 24-hour care
 icon: tree
 ---
 
-## A residential home for up to six adults with mental health problems
+## A residential home for up to six adults with mental health conditions
 
-Our home is set in the hillsides of Shawforth, Rochdale. A dedicated team of staff provide 24-hour individualised care and support to up to six adults with mental health problems, including those exacerbated by drugs.
+Our home is set in the hillsides of Shawforth, Rochdale. A dedicated team of staff provide 24-hour individualised care and support to up to six adults with mental health conditions, including those exacerbated by drugs.
 
 You’ll love our beautiful detached house. Residents can enjoy modern facilities in a calm, relaxing environment, with their own large, private room, and can sit in the vibrant garden, walk to nearby Bacup and Whitworth, or catch a quick bus to Rochdale Town Centre.
 

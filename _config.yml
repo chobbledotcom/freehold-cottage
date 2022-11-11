@@ -8,9 +8,6 @@ domain: "https://www.freeholdcottage.com"
 email_address: freeholdcottage@gmail.com
 phone_number: 01706 853384
 
-# if you blank this it'll remove the whatsapp links
-# whatsapp_country_code: 44
-
 address:
   street: 452 Market St
   locality: Shawforth, Rochdale

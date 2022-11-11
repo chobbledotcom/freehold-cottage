@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include title.html %}
+<div class="row">
+	<div class="col-lg-8 margin--bottom">
+		<div class="page {{page.cssClass}}">
+			{{ content | switcheroo }}
+			<div class="row gallery">
+				{% for image in site.static_files %}
+				    {% if image.path contains 'gallery/thumbs' %}
+				    	<div class="col-3">
+					    	<a href="{{ image.path| replace: "/thumbs", "" }}">
+						        <img src="{{ image.path }}" alt="image" />
+						    </a>
+					    </div>
+				    {% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-4 margin--bottom">
+		{% include contact-links.html %}
+		{% include cqc-widget.html %}
+	</div>
+</div>

@@ -1,0 +1,25 @@
+<ul class="service-links">
+    {% assign counter = 0 %}
+    {% for news_item in site.news|sort: "date" | reverse %}
+    {% if counter >= include.limit %}
+        {% break %}
+    {% endif %}
+    {% assign counter = counter | plus: 1 %}
+    <li class="service-links__link">
+        <a class="
+            service-links__link
+            {% if news_item.url == page.url %}
+                service-links__link--active
+            {% endif %}
+        " href="{{news_item.url}}">
+            {{news_item.date|date: "%b %d %Y"}}:
+            {{news_item.title}}
+        </a>
+    </li>
+    {% endfor %}
+    <li>
+        <a href="{% link _pages/news-archive.md %}">
+            Archive
+        </a>
+    </li>
+</ul>

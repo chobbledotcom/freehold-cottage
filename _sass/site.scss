@@ -1,0 +1,354 @@
+@charset "utf-8";
+// Define defaults for each variable.
+$highlight: #003a2c !default;
+$text: #888 !default;
+$header: #be7500 !default;
+$icons: #7b3c1d;
+$light-bg: #ffffeb !default;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$fancy-font: "Roboto Condensed", sans-serif !default;
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+//@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+//@import "bootstrap/code";
+@import "bootstrap/grid";
+//@import "bootstrap/tables";
+//@import "bootstrap/forms";
+//@import "bootstrap/buttons";
+//@import "bootstrap/transitions";
+//@import "bootstrap/dropdown";
+//@import "bootstrap/button-group";
+//@import "bootstrap/input-group";
+//@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+//@import "bootstrap/card";
+//@import "bootstrap/breadcrumb";
+//@import "bootstrap/pagination";
+//@import "bootstrap/badge";
+//@import "bootstrap/jumbotron";
+//@import "bootstrap/alert";
+//@import "bootstrap/progress";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/close";
+//@import "bootstrap/modal";
+//@import "bootstrap/tooltip";
+//@import "bootstrap/popover";
+//@import "bootstrap/carousel";@import "utilities/align";
+
+// @import "bootstrap/utilities/background";
+// @import "bootstrap/utilities/borders";
+// @import "bootstrap/utilities/clearfix";
+// @import "bootstrap/utilities/display";
+@import "bootstrap/utilities/embed";
+@import "bootstrap/utilities/flex";
+// @import "bootstrap/utilities/float";
+@import "bootstrap/utilities/position";
+// @import "bootstrap/utilities/screenreaders";
+// @import "bootstrap/utilities/sizing";
+// @import "bootstrap/utilities/spacing";
+@import "bootstrap/utilities/text";
+// @import "bootstrap/utilities/visibility";
+
+@import "bootstrap/print";
+
+/* roboto-condensed-regular - latin */
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/roboto-condensed.eot"); /* IE9 Compat Modes */
+    src: local("Roboto Condensed"), local("RobotoCondensed-Regular"),
+        url("/assets/fonts/roboto-condensed.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("/assets/fonts/roboto-condensed.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */ url("/assets/fonts/roboto-condensed.woff")
+            format("woff"),
+        /* Modern Browsers */ url("/assets/fonts/roboto-condensed.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("/assets/fonts/roboto-condensed.svg#RobotoCondensed")
+            format("svg"); /* Legacy iOS */
+}
+
+body {
+    background: url("/assets/flower-background.png") repeat center center fixed;
+    color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav {
+    font-family: $fancy-font;
+}
+
+hr {
+    border-top: 1px solid $text;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+nav,
+footer {
+    //background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII=);
+    background: $light-bg;
+}
+
+main .container {
+    background: white;
+}
+
+.hidden {
+    &-xs {
+        @include media-breakpoint-down(xs) {
+            display: none;
+        }
+    }
+    &-sm {
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+}
+
+.navbar {
+    a {
+        color: $header;
+    }
+    .navbar-brand {
+        font-size: 130%;
+    }
+    &__link {
+        font-size: 1.2rem;
+        margin-right: 1.2rem;
+        &:hover,
+        &.active,
+        &:active {
+            color: $highlight;
+            text-decoration: none;
+        }
+    }
+    &__icon {
+        color: $icons;
+        &--smaller {
+            font-size: 1rem;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+
+        .container {
+            display: block;
+        }
+    }
+}
+
+main {
+    padding: 80px 0 90px;
+    line-height: 1.8;
+    color: $text;
+    .container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-top: 110px;
+    }
+}
+
+.header {
+    border-bottom: 1px solid $text;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    &__text {
+        color: $header;
+    }
+    &__subtitle {
+        opacity: 0.7;
+        margin-left: 1rem;
+    }
+    @include media-breakpoint-down(md) {
+        text-align: center;
+
+        &__subtitle {
+            display: block;
+            font-size: 50%;
+        }
+    }
+}
+
+.margin {
+    &--top {
+        margin-top: 60px;
+    }
+    &--bottom {
+        margin-bottom: 60px;
+    }
+}
+
+hr {
+    border-top-color: #eee;
+}
+
+.page {
+    &__banner {
+        margin-bottom: 1rem;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+    strong {
+        color: $highlight;
+    }
+    a {
+        text-decoration: underline;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: $header;
+    }
+    h2 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        i {
+            width: 3em;
+            opacity: 0.3;
+            text-align: center;
+            font-size: 90%;
+        }
+    }
+    blockquote {
+        padding-left: 1rem;
+        font-style: italic;
+        border-left: 0.3rem solid $icons;
+    }
+    &--menu {
+        text-align: center;
+        em {
+            color: #1cb81c;
+            font-style: normal;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    }
+    table {
+        min-width: 300px;
+        margin: 1rem auto;
+        thead {
+            background: $light-bg;
+        }
+        td, th {
+            padding: 0.2rem 0.5rem;
+            text-align: center;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+.homepage-banner {
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+}
+
+.news-images {
+    a {
+        position: relative;
+        border: 2px solid white;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3px;
+        overflow: hidden;
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+        margin: 0 10px 10px 0;
+        &:hover {
+            border: 2px solid $green;
+        }
+        @include media-breakpoint-down(sm) {
+            display: block;
+            width: 48%;
+            padding: 0;
+            height: 0;
+            padding-top: 50%;
+            margin: 0 1% 10px;
+            float: left;
+        }
+    }
+    &::after {
+        display: block;
+        clear:both;
+    }
+}
+
+.embed-reviews {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    .widSSP {
+        margin: 0px auto !important;
+        width: auto !important;
+    }
+}
+
+.social-links, .contact-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2em;
+
+    &__icon {
+        color: $icons;
+        width: 2em;
+        text-align: center;
+        display: inline-block;
+        opacity: 0.7;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__list {
+        position: relative;
+        padding: 0 0 0 2em;
+        min-height: 2em;
+    }
+}
+
+footer {
+    padding: 4rem 0;
+    font-size: 80%;
+    text-align: center;
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+}

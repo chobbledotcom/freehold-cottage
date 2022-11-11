@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include title.html %}
+<div class="row">
+	<div class="col-md-8 order-sm-1 margin--bottom">
+		<div class="page {{page.cssClass}}">
+            {%- capture search_banner_path -%}
+                assets{{page.url}}.jpg
+            {%- endcapture -%}
+            {% assign images = site.static_files | where: "service_image", true%}
+            {% for banner_image in images %}
+                {% assign banner_image_path = banner_image.path | remove_first: "/" %}
+                {% if banner_image_path == search_banner_path %}
+                    <div class="page__banner">
+                        {% responsive_image_block %}
+                        path: {{ banner_image_path }}
+                        {% endresponsive_image_block %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+            {{ content | switcheroo }}
+            <h2>Services Offered</h2>
+		</div>
+	</div>
+	<div class="col-md-4 order-sm-2 margin--bottom">
+		{% include contact-links.html %}
+        {% include cqc-widget.html %}
+	</div>
+</div>

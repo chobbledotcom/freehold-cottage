@@ -1,0 +1,26 @@
+--- 
+layout: default 
+--- 
+
+{% include title.html %}
+
+<div class="homepage-banner">
+	{% responsive_image path: "assets/banner.jpg" %}
+</div>
+
+
+<div class="row">
+	<div class="col-md-8 page page--home">
+		{{ content }}
+		<hr>
+		{% if site.google_maps_embed %}
+			<div class="embed-responsive embed-responsive-16by9 margin--top">
+				<iframe class="embed-responsive-item" src="{{site.google_maps_embed}}"></iframe>
+			</div>
+		{% endif %}
+	</div>
+	<div class="col-md-4">
+		{% include contact-links.html %}
+		{% include cqc-widget.html %}
+	</div>
+</div>

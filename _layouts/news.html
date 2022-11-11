@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{%- capture img_dir -%}
+  /assets{{page.url}}/
+{%- endcapture -%}
+{% assign place_images = site.static_files | where: "news_image", true %}
+
+<div itemscope itemtype="http://schema.org/BlogPosting">
+  {% include title.html %}
+  <div class="row">
+    <div class="col-md-8 order-sm-1 margin--bottom">
+      <div class="page {{page.cssClass}}">
+        <div class="content" itemprop="articleBody">
+          {{ content }}
+        </div>
+        <div class="news-images">
+          {% for img in place_images %}
+            {% assign this_img_dir = img.path | slice: 0, img_dir.size %}
+            {% if this_img_dir == img_dir %}
+              {% assign thumb_path = img.path | replace_first: "assets/news/", "resized/200/news/" %}
+              <a href="{{img.path}}" style="
+                background-image: url('{{thumb_path}}')"
+              ></a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 order-sm-2 margin--bottom">
+      {% include contact-links.html %}
+      {% include cqc-widget.html %}
+      <hr>
+      <h5>News Posts</h5>
+      {% include news-links.html limit=10 %}
+    </div>
+  </div>
+</div>

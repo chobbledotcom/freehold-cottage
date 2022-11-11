@@ -1,0 +1,29 @@
+<ul class="contact-links">
+    {% if site.phone_number %}
+        <li class="contact-links__list">
+            <i class="contact-links__icon icon-phone"></i>
+            {%- capture to_markdown -%}
+                **Call:** {% include link-phone-number.md %}
+            {%- endcapture -%}
+            {{- to_markdown | markdownify -}}
+        </li>
+    {% endif %}
+    {% if site.whatsapp_country_code %}
+        <li class="contact-links__list">
+            <i class="contact-links__icon icon-whatsapp"></i>
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/{{site.whatsapp_country_code}}{{site.phone_number|remove:" "|remove_first:"0"}}">
+                Click here
+            </a>
+        </li>
+    {% endif %}
+    {% if site.email_address %}
+        <li class="contact-links__list">
+            <i class="contact-links__icon icon-at"></i>
+            <strong>Email:</strong>
+            <a href="mailto:{{site.email_address}}">
+                {{site.email_address}}
+            </a>
+        </li>
+    {% endif %}
+</ul>

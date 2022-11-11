@@ -1,0 +1,46 @@
+{% capture json_ld %}
+  {
+    "@context": "http://www.schema.org",
+    "@type": "{{ site.json_ld.type }}",
+    "name": "{{ site.site_name }}",
+    "url": "{{ site.domain }}",
+    "sameAs": [
+      {%- if site.google_maps -%}
+        "{{ site.google_maps }}",
+      {%- endif -%}
+      {%- if site.facebook_page -%}
+        "https://fb.me/{{ site.facebook_page }}",
+      {%- endif -%}
+    ],
+    "description": "{{ site.json_ld.description }}",
+    {%- if site.address.street -%}
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site.address.street }}",
+        "addressLocality": "{{ site.address.locality }}",
+        "addressRegion": "{{ site.address.region }}",
+        "postalCode": "{{ site.address.post_code }}",
+        "addressCountry": "{{ site.address.country }}"
+      },
+    {%- endif -%}
+    {%- if site.geo.latitude -%}
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "{{ site.geo.latitude }}",
+        "longitude": "{{ site.geo.longitude }}"
+      },
+    {%- endif -%}
+    {%- if google_maps -%}
+      "hasMap": "{{ site.google_maps }}",
+    {%- endif -%}
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "reservations",
+      "telephone": "+{{site.json_ld.country_code}} (0) {{site.phone_number|remove_first:"0"}}"
+    }
+  }
+{% endcapture %}
+<script type="application/ld+json">
+{{json_ld|replace:"  "," "|replace:"  "," "|replace:"  "," "|replace:"  "," "|remove:"
+"}}
+</script>

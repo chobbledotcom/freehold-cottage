@@ -1,0 +1,30 @@
+<nav class="navbar fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			<i class="navbar__icon icon-tree"></i>
+			{{site.company_name}}
+		</a>
+		<div class="navbar__links align--right">
+			{% assign pages_list = (site.pages | sort: 'order') %} 
+			{% for my_page in pages_list %}
+				{% assign my_page = pages_list | where: "path", path | first %}
+				{% if my_page.order == 0 %}
+					{% assign icon = "home" %}
+				{% else %}
+					{% assign icon = my_page.icon %}
+				{% endif %}
+				{% if my_page.order %}
+					<a class="
+						navbar__link
+						{% if my_page.order == 0 %}
+							hidden-sm
+						{% endif %}
+					" href="{{ my_page.url | relative_url }}">
+						{{ my_page.name | escape }}
+						<i class="navbar__icon navbar__icon--smaller icon-{{ icon }}"></i>
+					</a>
+				{% endif %} 
+			{% endfor %}
+		</div>
+	</div>
+</nav>

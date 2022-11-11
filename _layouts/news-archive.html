@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% include title.html %}
+<div class="row">
+    <div class="col-md-8 order-sm-1 margin--bottom">
+        <div class="page {{page.cssClass}}">
+            {{ content | switcheroo }}
+            {% assign news_items = site.news | sort: "date" | reverse %}
+            <hr>
+            {% for news_item in news_items %}
+                <p>
+                    <strong>
+                        <a href="{{news_item.url}}">
+                            {{news_item.date|date: "%b %d %Y"}}:
+                            {{news_item.title}}
+                        </a>
+                    </strong>
+                </p>
+                {{news_item.meta_description}}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4 order-sm-2 margin--bottom">
+        {% include contact-links.html %}
+        {% include cqc-widget.html %}
+    </div>
+</div>

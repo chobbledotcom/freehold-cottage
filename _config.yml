@@ -50,6 +50,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-responsive-image
+  - jekyll-minifier
 
 collections:
   pages:

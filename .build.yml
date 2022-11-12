@@ -3,6 +3,7 @@ packages:
   - ruby-full
   - ruby-dev
   - nodejs
+  - rsync
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
 environment:
@@ -18,6 +19,7 @@ tasks:
       bundle exec jekyll build
   - deploy: |
       cd freehold-cottage
-      ssh_opts="-o StrictHostKeyChecking=no"
-      rsync --rsh="$sshopts" -rP _site $deploy
+      ssh_opts="ssh -o StrictHostKeyChecking=no"
+      rsync --rsh="$sshopts" -rP _site/ $deploy
+
 

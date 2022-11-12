@@ -21,6 +21,6 @@ tasks:
   - deploy: |
       cd freehold-cottage
       ssh_opts="ssh -o StrictHostKeyChecking=no"
-      rsync --rsh="$sshopts" -rP _site/ $deploy
+      rsync --rsh="$ssh_opts" -rP _site/ $deploy
 
 

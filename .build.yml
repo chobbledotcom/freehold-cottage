@@ -4,6 +4,7 @@ packages:
   - ruby-dev
   - nodejs
   - rsync
+  - libmagickwand-dev
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
 environment:

@@ -16,7 +16,6 @@ tasks:
       sudo gem install bundler
   - build: |
       cd freehold-cottage
-      bundle config set --local without 'jekyll-watch'
       bundle install
       bundle exec jekyll build
   - deploy: |

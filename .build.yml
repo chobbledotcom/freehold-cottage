@@ -4,7 +4,7 @@ packages:
   - ruby-dev
   - nodejs
   - rsync
-  - imagemagick
+  - graphicsmagick
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
 secrets:

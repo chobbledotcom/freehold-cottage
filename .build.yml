@@ -10,7 +10,7 @@ packages:
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
 secrets:
-  - e674d338-b57a-4099-a057-dacf648ab7b3
+  - 663e253f-76fc-4d51-92ba-2412927a42d8
 tasks:
   - setup: |
       sudo gem install --no-document bundler

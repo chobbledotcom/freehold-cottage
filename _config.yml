@@ -65,7 +65,7 @@ defaults:
       path: "_pages"
     values:
       layout: page
-      permalink: :slug/
+      permalink: :slug
   - scope:
       type: services
     values:

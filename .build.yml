@@ -1,4 +1,4 @@
-image: debian/stable
+image: alpine/edge
 packages:
   - ruby-full
   - ruby-dev
@@ -7,20 +7,20 @@ packages:
   - libmagickwand-dev
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
-environment:
-  deploy: sourcehut@stefn.co.uk:freehold-cottage
 secrets:
-  - 312fd5eb-95ad-4f33-9c83-fd5664236be4
+  - 34e9229f-cf33-43b2-a1ba-bbc0d2667f82
 tasks:
   - setup: |
-      sudo gem install bundler
+      sudo gem install --no-document bundler
+      sudo gem install --no-document neocities
   - build: |
       cd freehold-cottage
+      bundle config jobs 4
       bundle install
-      bundle exec jekyll build
+      JEKYLL_ENV=production bundle exec jekyll build
   - deploy: |
       cd freehold-cottage
-      ssh_opts="ssh -o StrictHostKeyChecking=no"
-      rsync --rsh="$ssh_opts" -rP _site/ $deploy
-
-
+      set +x
+      export NEOCITIES_API_KEY=$(cat ~/.neocities_api_key)
+      set -x
+      neocities push --prune _site

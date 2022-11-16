@@ -1,7 +1,6 @@
 ---
 layout: gallery
 name: Photos
-permalink: /photos
 order: 3
 meta_title: Photos of Freehold Cottage Residential Home, Shawforth, Rochdale
 title: Photos

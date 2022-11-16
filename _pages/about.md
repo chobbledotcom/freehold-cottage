@@ -1,7 +1,6 @@
 ---
 layout: page
 name: About
-permalink: /about
 order: 1
 meta_title: Freehold Cottage Residential Home, Shawforth, Rochdale
 title: About Us

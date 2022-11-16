@@ -27,8 +27,6 @@ json_ld:
 google_maps: https://goo.gl/maps/8xbF4cJMCJjX9Vee6
 google_maps_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.8911053200522!2d-2.1682167843129148!3d53.68456618005128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bbe7a7e728fdb%3A0xb8b600deb70cdf9e!2s452%20Market%20St%2C%20Shawforth%2C%20Rochdale%20OL12%208JB!5e0!3m2!1sen!2suk!4v1630289871024!5m2!1sen!2suk"
 
-# you probably don't need to touch much below here that often
-
 responsive_image:
   template: _includes/responsive-image.html
   default_quality: 80
@@ -64,8 +62,8 @@ defaults:
   - scope:
       path: "_pages"
     values:
+      permalink: :slug/
       layout: page
-      permalink: :slug
   - scope:
       type: services
     values:

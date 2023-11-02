@@ -1,8 +1,8 @@
 image: alpine/edge
 packages:
-  - ruby-full
   - ruby-dev
   - nodejs
+  - npm
   - rsync
   - imagemagick
   - imagemagick-dev
@@ -12,17 +12,12 @@ sources:
 secrets:
   - 663e253f-76fc-4d51-92ba-2412927a42d8
 tasks:
-  - setup: |
-      sudo gem install --no-document bundler
-      sudo gem install --no-document neocities
   - build: |
-      cd freehold-cottage
-      bundle config jobs 4
-      bundle install
-      JEKYLL_ENV=production bundle exec jekyll build
+      cd $repo
+      sudo sh ../build-scripts/jekyll-build
+  - minify: |
+      cd $repo
+      sudo sh ../build-scripts/minify-site
   - deploy: |
-      cd freehold-cottage
-      set +x
-      export NEOCITIES_API_KEY=$(cat ~/.neocities_api_key)
-      set -x
-      neocities push --prune _site
+      cd $repo
+      sudo sh ../build-scripts/neocities-deploy $repo _site

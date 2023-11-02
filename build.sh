@@ -16,4 +16,4 @@ neocities push --prune _site
 
 git add .
 git commit -m "auto-updated after build"
-git pushbundll
+git push

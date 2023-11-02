@@ -63,19 +63,19 @@ $fancy-font: "Roboto Condensed", sans-serif !default;
     font-family: "Roboto Condensed";
     font-style: normal;
     font-weight: 400;
-    src: url("/assets/fonts/roboto-condensed.eot"); /* IE9 Compat Modes */
+    src: url("/assets/fonts/roboto-condensed.eot");
+    /* IE9 Compat Modes */
     src: local("Roboto Condensed"), local("RobotoCondensed-Regular"),
-        url("/assets/fonts/roboto-condensed.eot?#iefix")
-            format("embedded-opentype"),
-        /* IE6-IE8 */ url("/assets/fonts/roboto-condensed.woff2")
-            format("woff2"),
-        /* Super Modern Browsers */ url("/assets/fonts/roboto-condensed.woff")
-            format("woff"),
-        /* Modern Browsers */ url("/assets/fonts/roboto-condensed.ttf")
-            format("truetype"),
+        url("/assets/fonts/roboto-condensed.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("/assets/fonts/roboto-condensed.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("/assets/fonts/roboto-condensed.woff") format("woff"),
+        /* Modern Browsers */
+        url("/assets/fonts/roboto-condensed.ttf") format("truetype"),
         /* Safari, Android, iOS */
-            url("/assets/fonts/roboto-condensed.svg#RobotoCondensed")
-            format("svg"); /* Legacy iOS */
+        url("/assets/fonts/roboto-condensed.svg#RobotoCondensed") format("svg");
+    /* Legacy iOS */
 }
 
 body {
@@ -114,6 +114,7 @@ main .container {
             display: none;
         }
     }
+
     &-sm {
         @include media-breakpoint-down(sm) {
             display: none;
@@ -125,12 +126,15 @@ main .container {
     a {
         color: $header;
     }
+
     .navbar-brand {
         font-size: 130%;
     }
+
     &__link {
         font-size: 1.2rem;
         margin-right: 1.2rem;
+
         &:hover,
         &.active,
         &:active {
@@ -138,12 +142,15 @@ main .container {
             text-decoration: none;
         }
     }
+
     &__icon {
         color: $icons;
+
         &--smaller {
             font-size: 1rem;
         }
     }
+
     @include media-breakpoint-down(sm) {
         text-align: center;
 
@@ -157,11 +164,13 @@ main {
     padding: 80px 0 90px;
     line-height: 1.8;
     color: $text;
+
     .container {
         padding-top: 15px;
         padding-bottom: 15px;
         border-radius: 10px;
     }
+
     @include media-breakpoint-down(sm) {
         padding-top: 110px;
     }
@@ -171,13 +180,16 @@ main {
     border-bottom: 1px solid $text;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
+
     &__text {
         color: $header;
     }
+
     &__subtitle {
         opacity: 0.7;
         margin-left: 1rem;
     }
+
     @include media-breakpoint-down(md) {
         text-align: center;
 
@@ -192,6 +204,7 @@ main {
     &--top {
         margin-top: 60px;
     }
+
     &--bottom {
         margin-bottom: 60px;
     }
@@ -213,26 +226,38 @@ hr {
             max-width: 100%;
         }
     }
+
     strong {
         color: $highlight;
     }
+
     a {
         text-decoration: underline;
     }
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $header;
         scroll-margin-top: 60px;
+
         @include media-breakpoint-down(md) {
             scroll-margin-top: 80px;
         }
+
         @include media-breakpoint-down(md) {
             scroll-margin-top: 90px;
         }
     }
+
     h2 {
         padding-top: 30px;
         padding-bottom: 10px;
         margin-top: 0;
+
         i {
             width: 3em;
             opacity: 0.3;
@@ -240,34 +265,44 @@ hr {
             font-size: 90%;
         }
     }
+
     blockquote {
         padding-left: 1rem;
         font-style: italic;
         border-left: 0.3rem solid $icons;
     }
+
     &--menu {
         text-align: center;
+
         em {
             color: #1cb81c;
             font-style: normal;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
     }
+
     table {
         min-width: 300px;
         margin: 1rem auto;
+
         thead {
             background: $light-bg;
         }
-        td, th {
+
+        td,
+        th {
             padding: 0.2rem 0.5rem;
             text-align: center;
         }
     }
+
     @include media-breakpoint-down(sm) {
+
         h1,
         h2,
         h3 {
@@ -298,9 +333,11 @@ hr {
         width: 150px;
         height: 100px;
         margin: 0 10px 10px 0;
+
         &:hover {
             border: 2px solid $green;
         }
+
         @include media-breakpoint-down(sm) {
             display: block;
             width: 48%;
@@ -311,9 +348,10 @@ hr {
             float: left;
         }
     }
+
     &::after {
         display: block;
-        clear:both;
+        clear: both;
     }
 }
 
@@ -321,13 +359,15 @@ hr {
     padding: 10px;
     background: white;
     border-radius: 5px;
+
     .widSSP {
         margin: 0px auto !important;
         width: auto !important;
     }
 }
 
-.social-links, .contact-links {
+.social-links,
+.contact-links {
     list-style-type: none;
     padding: 0;
     margin-top: 2em;
@@ -355,15 +395,18 @@ hr {
         overflow: hidden;
         border-radius: 5px;
         display: block;
+
         &:hover {
             cursor: pointer;
             outline: 2px solid $icons;
         }
     }
+
     img {
         display: block;
         width: 100%;
     }
+
     .col-3 {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -374,8 +417,23 @@ footer {
     padding: 4rem 0;
     font-size: 80%;
     text-align: center;
+
     ul {
         list-style-type: none;
         padding-left: 0;
+    }
+}
+
+.scores-doors {
+    display: block;
+
+    a {
+        display: block;
+        margin: 10px auto;
+        max-width: fit-content;
+
+        img {
+            max-width: 100%;
+        }
     }
 }

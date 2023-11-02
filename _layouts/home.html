@@ -1,6 +1,6 @@
---- 
-layout: default 
---- 
+---
+layout: default
+---
 
 {% include title.html %}
 
@@ -10,17 +10,25 @@ layout: default
 
 
 <div class="row">
-	<div class="col-lg-8 page page--home">
+	<div class="col-md-8 page page--home">
 		{{ content }}
 		<hr>
 		{% if site.google_maps_embed %}
-			<div class="embed-responsive embed-responsive-16by9 margin--top">
-				<iframe class="embed-responsive-item" src="{{site.google_maps_embed}}"></iframe>
-			</div>
+		<div class="embed-responsive embed-responsive-16by9 margin--top">
+			<iframe class="embed-responsive-item"
+				src="{{site.google_maps_embed}}"></iframe>
+		</div>
 		{% endif %}
 	</div>
-	<div class="col-lg-4">
+	<div class="col-md-4">
 		{% include contact-links.html %}
 		{% include cqc-widget.html %}
+		<div class="scores-doors">
+			<a
+				href="https://www.scoresonthedoors.org.uk/business/freehold-cottage-rochdale-lancashire-510716.html?ins_type=FH">
+				<img src="/assets/scores-on-the-doors.png"
+					alt="Food Hygiene Rating - 5/5 - Very Good">
+			</a>
+		</div>
 	</div>
 </div>

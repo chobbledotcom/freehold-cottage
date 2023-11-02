@@ -8,7 +8,7 @@ packages:
   - imagemagick-dev
   - imagemagick-libs
 environment:
-  repo: freehold
+  repo: freehold-cottage
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
   - https://git.sr.ht/~stfn/build-scripts

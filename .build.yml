@@ -7,8 +7,11 @@ packages:
   - imagemagick
   - imagemagick-dev
   - imagemagick-libs
+environment:
+  repo: freehold
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
+  - https://git.sr.ht/~stfn/build-scripts
 secrets:
   - 663e253f-76fc-4d51-92ba-2412927a42d8
 tasks:

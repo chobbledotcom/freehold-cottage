@@ -2,3 +2,5 @@ _site
 vendor
 .jekyll-cache
 .DS_Store
+.nix-gems
+.direnv

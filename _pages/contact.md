@@ -7,7 +7,7 @@ meta_title: Freehold Cottage contact details
 subtitle: It's easy to get in touch
 ---
 
-If you're interested in your or someone else's eligibility for Freehold Cottage, please check out our [eligibility and referrrals](/page/eligibility-and-referrals.md) page.
+If you're interested in your or someone else's eligibility for Freehold Cottage, please check out our [eligibility and referrrals](/page/eligibility-and-referrals) page.
 
 For all other enquiries, please:
 
@@ -19,4 +19,4 @@ For all other enquiries, please:
 
 ### Other Links
 
-- **[Newbarn Ltd Supported Accommodation](http://www.newbarnltd.co.uk)**
+- **[Newbarn Ltd Supported Accommodation](https://newbarnltd.co.uk)**

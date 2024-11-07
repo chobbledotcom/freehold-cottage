@@ -7,7 +7,7 @@ meta_title: Freehold Cottage contact details
 subtitle: It's easy to get in touch
 ---
 
-If you're interested in your or someone else's eligibility for Freehold Cottage, please check out our [eligibility and referrrals](/page/eligibility-and-referrals) page.
+If you're interested in your or someone else's eligibility for Freehold Cottage, please check out our [eligibility and referrrals](/eligibility-and-referrals) page.
 
 For all other enquiries, please:
 

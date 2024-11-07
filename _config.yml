@@ -3,7 +3,7 @@ title: Freehold Cottage Residential Home
 description: Residential Care Home in Shawforth, Rochdale
 domain: "https://freeholdcottage.com"
 
-# you can leave any of these empty - that bit just won't show 
+# you can leave any of these empty - that bit just won't show
 
 email_address: freeholdcottage@gmail.com
 phone_number: 01706 853384
@@ -48,7 +48,6 @@ markdown: kramdown
 
 plugins:
   - jekyll-responsive-image
-  - jekyll-minifier
 
 collections:
   pages:
@@ -65,6 +64,7 @@ defaults:
       permalink: :slug/
       layout: page
   - scope:
+      path: "_services"
       type: services
     values:
       permalink: services/:title/
@@ -73,3 +73,15 @@ defaults:
       path: "assets/services"
     values:
       service_image: true
+
+exclude:
+  - build
+  - shell.nix
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - bin/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor

@@ -1,6 +1,12 @@
 _site
-vendor
-.jekyll-cache
-.DS_Store
-.nix-gems
+.bundle
 .direnv
+.nix-gems
+.DS_Store
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+.env
+.aider*

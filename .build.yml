@@ -1,26 +1,9 @@
-image: alpine/edge
-packages:
-  - ruby-dev
-  - nodejs
-  - npm
-  - rsync
-  - imagemagick
-  - imagemagick-dev
-  - imagemagick-libs
-environment:
-  repo: freehold-cottage
+image: nixos/latest
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
-  - https://git.sr.ht/~stfn/build-scripts
 secrets:
   - 663e253f-76fc-4d51-92ba-2412927a42d8
 tasks:
   - build: |
-      cd $repo
-      sudo sh ../build-scripts/jekyll-build
-  - minify: |
-      cd $repo
-      sudo sh ../build-scripts/minify-site
-  - deploy: |
-      cd $repo
-      sudo sh ../build-scripts/neocities-deploy $repo _site
+      cd freehold-cottage
+      sh bin/build

@@ -19,7 +19,6 @@ gem "rmagick"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
-  gem "jekyll-minifier"
   gem "jekyll-responsive-image"
 end
 

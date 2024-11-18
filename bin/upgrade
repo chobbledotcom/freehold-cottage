@@ -5,5 +5,6 @@ nix-shell -p ruby_3_3 imagemagick pkg-config --pure --command "
   echo 'Installing bundles'
   bundle config set path 'vendor/cache'
   bundle install --gemfile=Gemfile
+  bundle update --bundler
   bundle update
 "

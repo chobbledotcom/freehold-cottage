@@ -6,7 +6,7 @@ nix-shell -p ruby_3_3 imagemagick pkg-config --pure --command "
   export JEKYLL_ENV=production
   echo 'Installing bundles'
   bundle config set path 'vendor/cache'
-  bundle install --gemfile=Gemfile
+  bundle install --full-index --gemfile=Gemfile
 
   echo 'Building site'
   bundle exec jekyll build

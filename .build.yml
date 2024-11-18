@@ -2,7 +2,7 @@ image: nixos/latest
 sources:
   - https://git.sr.ht/~stfn/freehold-cottage
 secrets:
-  - 663e253f-76fc-4d51-92ba-2412927a42d8
+  - 2383d3fd-e67f-4cd6-b36f-c97b8c011147
 tasks:
   - build: |
       cd freehold-cottage

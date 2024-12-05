@@ -10,3 +10,4 @@ vendor
 Gemfile.lock
 .env
 .aider*
+resized

@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{%- include meta-title.html -%}</title>
-  
+
   <meta name="description" content="
     {{- page.meta_description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape -}}
   ">
@@ -22,4 +22,6 @@
   <meta name="theme-color" content="#ffffff">
 
   {% include json-ld.html %}
+  <script data-goatcounter="https://analytics.freeholdcottage.com/count"
+          async src="https://analytics.freeholdcottage.com/count.js"></script>
 </head>

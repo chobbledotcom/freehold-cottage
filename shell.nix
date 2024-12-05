@@ -1,6 +1,6 @@
 with (import <nixpkgs> {}); let
   env = bundlerEnv {
-    name = "BluePitsHousingAction";
+    name = "FreeholdCottage";
     inherit ruby;
     gemfile = ./Gemfile;
     lockfile = ./Gemfile.lock;
@@ -8,7 +8,7 @@ with (import <nixpkgs> {}); let
   };
 in
   stdenv.mkDerivation {
-    name = "bluepitshousingaction-co-uk";
+    name = "freeholdcottage-com";
     buildInputs = [
       env
       ruby_3_3

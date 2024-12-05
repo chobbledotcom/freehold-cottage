@@ -3,7 +3,7 @@
 let
   src = ./.;
   env = pkgs.bundlerEnv {
-    name = "bluepitshousingaction-co-uk";
+    name = "freeholdcottage-com";
     inherit (pkgs) ruby;
     gemfile = ./Gemfile;
     lockfile = ./Gemfile.lock;
@@ -11,7 +11,7 @@ let
   };
 in
 pkgs.stdenv.mkDerivation {
-  name = "bluepitshousingaction-co-uk";
+  name = "freeholdcottage-com";
 
   src = builtins.filterSource
     (path: type: !(builtins.elem (baseNameOf path) [

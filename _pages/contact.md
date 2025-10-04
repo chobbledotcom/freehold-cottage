@@ -19,4 +19,4 @@ For all other enquiries, please:
 
 ### Other Links
 
-- **[Newbarn Ltd Supported Accommodation](https://newbarnltd.co.uk)**
+- **[Newbarn Ltd Supported Accommodation](https://www.newbarnltd.co.uk)**

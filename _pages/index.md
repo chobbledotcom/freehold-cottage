@@ -11,6 +11,8 @@ icon: tree
 
 ## A residential home for up to six adults with mental health conditions
 
+Freehold Cottage is part of [Newbarn Ltd](https://www.newbarnltd.co.uk), a wider care provision delivering supported accommodation and residential services across the region.
+
 Our home is set in the hillsides of Shawforth, Rochdale. A dedicated team of staff provide 24-hour individualised care and support to up to six adults with mental health conditions, including those exacerbated by drugs.
 
 You’ll love our beautiful detached house. Residents can enjoy modern facilities in a calm, relaxing environment, with their own large, private room, and can sit in the vibrant garden, walk to nearby Bacup and Whitworth, or catch a quick bus to Rochdale Town Centre.
@@ -28,7 +30,7 @@ This allows them to participate in the home, the local community and the wider w
 
 Read more on our [about](/about) page.
 
-Freehold Cottage is a member of North East Lancs. Care Homes Association and the N.S.F.
+Freehold Cottage is a member of North East Lancs. Care Homes Association and the N.S.F., and operates as part of the [Newbarn Ltd](https://www.newbarnltd.co.uk) family of care services.
 
 The home is insured with Ecclesiastical Insurance. A Public Liability Certificate is displayed on the office wall.
 

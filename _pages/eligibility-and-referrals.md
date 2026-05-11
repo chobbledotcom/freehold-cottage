@@ -15,6 +15,8 @@ You’re eligible to live at Freehold Cottage if you are:
 
 We’d love to discuss eligibility with you. Find out about how Freehold Cottage offers a top-quality service you can rely on – visit our contact us page to find out more.
 
+If Freehold Cottage isn't quite the right fit, our parent organisation [Newbarn Ltd](https://www.newbarnltd.co.uk) provides supported accommodation and other care services that may suit your needs.
+
 ## Referrals
 
 Click to download referral forms (Microsoft Word .docx files) and forward completed forms to us at [freeholdcottage@gmail.com](mailto:freeholdcottage@gmail.com)

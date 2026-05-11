@@ -16,6 +16,8 @@ icon: tree
 
 ## Our Support
 
+Freehold Cottage is part of [Newbarn Ltd](https://www.newbarnltd.co.uk), a wider care provision offering supported accommodation and residential services. Being part of the Newbarn family means residents benefit from shared expertise, resources and pathways across our connected services.
+
 Our dedicated and professional team collectively has decades of experience in providing residential support to people with mental health conditions, including those exacerbated by drugs and alcohol.
 
 We’ve all got a close bond with the local community, and close relationships with medical professionals including dentists, doctors and opticians, so we can ensure that everyone at Freehold Cottage receives the specialised care they need.

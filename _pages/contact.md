@@ -17,6 +17,8 @@ For all other enquiries, please:
 - **[Find us on Google Maps](https://goo.gl/maps/xhycSrKSjGWUVJYx7)**
 - **[Our listing on the Care Quality Commission (CQC) website](https://www.cqc.org.uk/location/1-9162515718)**
 
-### Other Links
+### Part of Newbarn Ltd
+
+Freehold Cottage is part of the wider [Newbarn Ltd](https://www.newbarnltd.co.uk) care provision, which also offers supported accommodation and other services.
 
 - **[Newbarn Ltd Supported Accommodation](https://www.newbarnltd.co.uk)**
